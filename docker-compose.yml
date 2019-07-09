@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  jedox:
+    build: .
+    ports:
+      - 20080:80
+      - 27777:7777
+      - 27775:7775
+    privileged: true
+    volumes:
+      - ./installer:/tmp
+      - ./data:/opt
+#    entrypoint: /bin/sh
+    restart: always
+    tty: true
