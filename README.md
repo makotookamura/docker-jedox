@@ -23,12 +23,16 @@ you open http://localhost with browser.
 ### change version
 
 `docker-compose down`  
+
 open jedox_install_start.sh with editor and change curl URL.  
+
 `docker-compose up -d --build`
 
 ### change ports
 
 `docker-compose down`  
+
 open docker-compose.yml with editor and change ports definition.  
+
 `docker-compose up -d`
 
